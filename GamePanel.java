@@ -144,7 +144,7 @@ public class GamePanel extends JPanel implements ActionListener{
 	// Checks if snake has collided with itself or the walls
 	public void checkCollisions() {
 		// Checks head collide with body
-		for (int i = bodyParts; i < 0; i--) {
+		for (int i = bodyParts; i > 0; i--) {
 			if ((x[0] == x[i]) && (y[0] == y[i])) {
 				running = false;
 			}
